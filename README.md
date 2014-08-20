@@ -1,4 +1,4 @@
 Pinxit
 ============
 
-Source code of pinxit.me
+Source code of pinxit.me (WIP)
