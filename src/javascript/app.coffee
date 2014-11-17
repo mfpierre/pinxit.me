@@ -1,5 +1,6 @@
 $ = require 'jquery'
 fss = require 'fss'
+jfp = require 'jfp'
 
 $ ->
     container = document.getElementById('banner');
@@ -34,3 +35,11 @@ $ ->
     initialise()
     resize()
     animate()
+
+    $('input').floatingPlaceholder()
+
+    $('textarea').floatingPlaceholder({
+      placeholderActiveColor: '#000',
+      placeholderIdleColor: 'red',
+      activeClass: 'placeholder-aezr'
+    })

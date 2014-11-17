@@ -6,7 +6,8 @@
     "url": "git://github.com/mfpierre/pinxit.me.git"
   },
   "browser": {
-    "fss": "./src/javascript/fss.min.js"
+    "fss": "./src/javascript/lib/fss.min.js",
+    "jfp": "./src/javascript/lib/jquery-floating-placeholder.min.js"
   },
   "browserify": {
     "transform": [
@@ -18,6 +19,12 @@
   "browserify-shim": {
     "fss": {
       "exports": "plugin"
+    },
+    "jfp": {
+      "exports": "jfp",
+      "depends": [
+        "jquery:jQuery"
+      ]
     }
   },
   "devDependencies": {

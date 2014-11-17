@@ -29,10 +29,11 @@ html(lang='en')
         h2 Get in touch
         form#signup-form.white-popup-block.mfp-hide(action='http://getsimpleform.com/messages?form_api_token=c1a799ba02356210d1cb56b9869127d8', method='post')
           .form-row
-            input#name.floating-placeholder(name='name', type='text', placeholder='Name', required='')
-            input#email.floating-placeholder(name='email', type='email', placeholder='Email', required='')
+            input.split.floating-placeholder(name='name', type='text', placeholder='Name', required='')
           .form-row
-            textarea#website.floating-placeholder(name='message', placeholder='Message', required='')
+            input.split.floating-placeholder(name='email', type='email', placeholder='Email', required='')
+          .form-row
+            input#message.floating-placeholder(name='message', placeholder='Message', required='')
           input.submit.button.sign-up.button2(type='submit', value='Send message')
 
     footer#footer
