@@ -4,15 +4,33 @@ html(lang='en')
     meta(charset='utf-8')
     title Pinxit
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Lato:300,900')
-    link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Lato:300,400,900')
+    link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css')
     link(rel='stylesheet', href='/app.css')
   body
-    #banner
+    header(id='banner')
       h1.title Pinxit
-      .arrow
-        i.title.fa.fa-angle-down
-    h2 I Write Code
-    h2 I Travel
-    h2 Contact Me
+    div(id='main')
+      h1 test
+      h2 I Write Code
+      h2 I Travel
+      h2 Contact Me
+    footer#footer
+      ul.icons
+          li
+            a.fa.fa-twitter(href='#')
+          li
+            a.fa.fa-github(href='#')
+          li
+            a.fa.fa-flickr(href='#')
+          li
+            a.fa.fa-linkedin(href='#')
+          li
+            a.fa.fa-angellist(href='#')
+
+        ul.copyright
+          li Pierre Margueritte - 2014
+          li
+            a(href='http://html5up.net') View source
     script(src='/app.js')
+

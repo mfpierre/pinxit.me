@@ -7,7 +7,7 @@ $ ->
     scene = new FSS.Scene();
     light = new FSS.Light('#100088', '#00840f');
     light2 = new FSS.Light('#100088', '#00840f');
-    geometry = new FSS.Plane(1920, 400, 20, 4);
+    geometry = new FSS.Plane(800, 1200, 8, 20);
     material = new FSS.Material('#555555', '#FFFFFF');
     mesh = new FSS.Mesh(geometry, material);
     now = Date.now();
