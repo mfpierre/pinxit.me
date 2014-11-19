@@ -60,10 +60,16 @@ a {
 }
 
 form {
-  .column(8);
+  .column(7);
   .form-row {
     margin-top: 10px;
   }
+}
+
+#map {
+  .column(4);
+  .push(1);
+  height: 200px;
 }
 
 input {
@@ -119,8 +125,19 @@ header {
   box-sizing: border-box;
   padding: 3em;
   section.border {
+    margin-top: 15px;
     border-top: solid 2px #efefef;
   }
+}
+
+section:after {
+  content:'';
+  display:block;
+  clear: both;
+}
+
+.project {
+  .column(6);
 }
 
 footer {
@@ -181,6 +198,10 @@ footer {
     }
   }
   form {
+    .column(12);
+    margin-bottom: 15px;
+  }
+  #map {
     .column(12);
   }
   footer {
