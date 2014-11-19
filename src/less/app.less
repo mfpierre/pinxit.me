@@ -74,6 +74,21 @@ input {
   border-bottom: 1px solid #efefef;
 }
 
+.button {
+  border-radius: 0.35em;
+  border: solid 3px #efefef;
+  background-color: transparent;
+  color: #787878;
+  padding: 0 1.5em;
+  line-height: 2.5em;
+  font-weight: 400;
+  .transition(0.2s, ease-in-out);
+  &:hover {
+    border-color: #49bf9d;
+    color: #49bf9d;
+  }
+}
+
 header {
   .column(4);
   display: block;
@@ -164,6 +179,9 @@ footer {
       border-width: 2px;
       width: 161px;
     }
+  }
+  form {
+    .column(12);
   }
   footer {
     .column(12);

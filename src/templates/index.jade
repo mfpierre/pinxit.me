@@ -19,22 +19,27 @@ html(lang='en')
         p Tech & Start-up enthusiast
 
     div(id='main')
-      section.intro
-        h2 Intro
-        p todo
-      section.border
+      section
         h2 Projects
-        p todo
+        .project
+          p test
+        .project
+          p test
+        .project
+          p test
+        .project
+          p test
+
       section.border
         h2 Get in touch
         form#signup-form.white-popup-block.mfp-hide(action='http://getsimpleform.com/messages?form_api_token=c1a799ba02356210d1cb56b9869127d8', method='post')
           .form-row
-            input.split.floating-placeholder(name='name', type='text', placeholder='Name', required='')
+            input.floating-placeholder(name='name', type='text', placeholder='Name', required='')
           .form-row
-            input.split.floating-placeholder(name='email', type='email', placeholder='Email', required='')
+            input.floating-placeholder(name='email', type='email', placeholder='Email', required='')
           .form-row
             input#message.floating-placeholder(name='message', placeholder='Message', required='')
-          input.submit.button.sign-up.button2(type='submit', value='Send message')
+          input.button(type='submit', value='Send message')
 
     footer#footer
       ul.icons
