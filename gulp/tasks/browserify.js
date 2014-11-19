@@ -15,8 +15,6 @@ var source       = require('vinyl-source-stream');
 
 gulp.task('browserify', function() {
 
-  var bundleMethod = global.isWatching ? watchify : browserify;
-
   var bundler = browserify({
     // Required watchify args
     cache: {}, packageCache: {}, fullPaths: true,
@@ -47,6 +45,8 @@ gulp.task('browserify', function() {
   };
 
   if(global.isWatching) {
+    // Wrap with watchify and rebundle on changes
+    bundler = watchify(bundler);
     // Rebundle with watchify on changes.
     bundler.on('update', bundle);
   }
