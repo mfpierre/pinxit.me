@@ -4,7 +4,7 @@ var jade = require('gulp-jade');
 gulp.task('markup', function() {
   return gulp.src('src/templates/*.jade')
     .pipe(jade({
-      pretty: true
+      pretty: false
     }))
     .pipe(gulp.dest('build'));
 });
