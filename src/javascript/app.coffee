@@ -36,9 +36,8 @@ $ ->
   resize()
   animate()
 
-  $('input').floatingPlaceholder({'placeholderActiveColor':'red'})
-
-  $('textarea').floatingPlaceholder({'placeholderActiveColor':'red'})
+  $('input').floatingPlaceholder({placeholderActiveColor:'#49bf9d',placeholderIdleColor:'#787878'})
+  $('textarea').floatingPlaceholder({placeholderActiveColor:'#49bf9d',placeholderIdleColor:'#787878'})
 
   currentLocation = new google.maps.LatLng(48.876987, 2.329545)
 
