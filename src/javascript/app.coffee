@@ -127,3 +127,7 @@ $ ->
       map: map,
       title: 'I\'m here!'
   });
+
+  $('.ajax-popup-link').magnificPopup({
+    type: 'ajax'
+  });
