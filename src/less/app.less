@@ -7,7 +7,7 @@
 //////////
 
 // Specify the number of columns and set column and gutter widths
-@columns: 13;
+@columns: 21;
 @column-width: 60;
 @gutter-width: 0;
 
@@ -19,31 +19,31 @@
 ////////////
 
 header {
-  .column(4);
+  .column(6);
 }
 
 #main {
-  .column(9);
-  .push(4);
+  .column(15);
+  .push(6);
 }
 
 form {
-  .column(7);
+  .column(11);
 }
 
 .project {
-  .column(6);
+  .column(10);
   &:nth-of-type(2n) {
     .push(1);
   }
 }
 
 footer {
-  .column(4);
+  .column(6);
 }
 
 #map {
-  .column(5);
+  .column(9);
   .push(1);
 }
 
@@ -246,7 +246,7 @@ footer {
 
 @media screen and (max-width: 720px) {
   header {
-    .column(13);
+    .column(21);
     position: relative;
     height: 220px;
     .intro {
@@ -255,7 +255,7 @@ footer {
     }
   }
   #main {
-    .column(13);
+    .column(21);
   }
   h1 {
     font-size: 3em;
@@ -265,20 +265,20 @@ footer {
     }
   }
   .project {
-    .column(13);
+    .column(21);
     &:nth-of-type(2n) {
       .push(0);
     }
   }
   form {
-    .column(13);
+    .column(21);
     margin-bottom: 15px;
   }
   #map {
-    .column(13);
+    .column(21);
   }
   footer {
-    .column(13);
+    .column(21);
     position: relative;
     background-color: #0B4B64;
   }
