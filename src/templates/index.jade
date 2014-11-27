@@ -23,29 +23,33 @@ html(lang='en')
       section
         h2 Projects
         figure.project
-          .thumb
-            img(src="images/atrium.jpg")
-          figcaption
-            h3 Atrium
+          a.ajax-popup-link(href="/projects/backpackmojo.html")
+            figcaption
+              h3 Atrium
+            .thumb
+              img(src="images/atrium_thumb.jpg")
         figure.project
-          .thumb
-            img(src="images/atrium.jpg")
-          figcaption
-            h3 Backpackmojo
+          a.ajax-popup-link(href="/projects/backpackmojo.html")
+            figcaption
+              h3 Backpackmojo
+            .thumb
+              img(src="images/backpackmojo_thumb.jpg")
         figure.project
-          .thumb
-            img(src="images/atrium.jpg")
-          figcaption
-            h3 Metacheck
+          a.ajax-popup-link(href="/projects/backpackmojo.html")
+            figcaption
+              h3 Metacheck
+            .thumb
+              img(src="images/metacheck_thumb.jpg")
         figure.project
-          .thumb
-            img(src="images/atrium.jpg")
-          figcaption
-            h3 Mobile Armory for D3
+          a.ajax-popup-link(href="/projects/backpackmojo.html")
+            figcaption
+              h3 Mobile Armory for D3
+            .thumb
+              img(src="images/d3a_thumb.jpg")
 
       section.border
         h2 Get in touch
-        form#signup-form.white-popup-block.mfp-hide(action='http://getsimpleform.com/messages?form_api_token=c1a799ba02356210d1cb56b9869127d8', method='post')
+        form#signup-form(action='http://getsimpleform.com/messages?form_api_token=c1a799ba02356210d1cb56b9869127d8', method='post')
           .form-row
             input.floating-placeholder(name='name', type='text', placeholder='Name', required='')
           .form-row
