@@ -39,7 +39,7 @@ $ ->
   $('input').floatingPlaceholder({placeholderActiveColor:'#49bf9d',placeholderIdleColor:'#787878'})
   $('textarea').floatingPlaceholder({placeholderActiveColor:'#49bf9d',placeholderIdleColor:'#787878'})
 
-  currentLocation = new google.maps.LatLng(48.876987, 2.329545)
+  currentLocation = new google.maps.LatLng(48.873803, 2.363023)
 
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: 11,
