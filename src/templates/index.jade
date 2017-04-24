@@ -81,13 +81,14 @@ html(lang='en')
 
       section.border
         h2 Get in touch
-        form#signup-form(action='http://getsimpleform.com/messages?form_api_token=c1a799ba02356210d1cb56b9869127d8', method='post')
+        form#signup-form(action='http://formspree.io/mfpierre@gmail.com', method='post')
           .form-row
             input.floating-placeholder(name='name', type='text', placeholder='Name', required='')
           .form-row
             input.floating-placeholder(name='email', type='email', placeholder='Email', required='')
           .form-row
             input#message.floating-placeholder(name='message', placeholder='Message', required='')
+          input(type='text', name="_gotcha", style="display:none")
           input.button(type='submit', value='Send message')
         #map
 
