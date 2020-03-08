@@ -39,20 +39,10 @@ $ ->
   $('input').floatingPlaceholder({placeholderActiveColor:'#49bf9d',placeholderIdleColor:'#787878'})
   $('textarea').floatingPlaceholder({placeholderActiveColor:'#49bf9d',placeholderIdleColor:'#787878'})
 
-  currentLocation = new google.maps.LatLng(48.873803, 2.363023)
-
-  map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 11,
-    streetViewControl: false,
-    mapTypeControl: false,
-    center: currentLocation,
-  });
-
-  marker = new google.maps.Marker({
-      position: currentLocation,
-      map: map,
-      title: 'I\'m here!'
-  });
+  map = L.map('map').setView([48.873803, 2.363023], 11);
+  L.marker([48.873803, 2.363023]).addTo(map)
+    .bindPopup('👋');
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {, attribution: '&copy; <a href="https://www.openstreetmap.org/">OSM</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'}).addTo(map);
 
   $('.ajax-popup-link').magnificPopup({
     type: 'ajax'
